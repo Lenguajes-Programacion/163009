@@ -10,7 +10,7 @@ namespace PracticaUno
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello There ");
+            Console.WriteLine($"Hello {args[0]}");
             Console.ReadKey();
         }
     }
