@@ -10,7 +10,17 @@ namespace PracticaUno
     {
         static void Main(string[] args)
         {
+            string Nombre = "Big Yoshi";
             Console.WriteLine($"Hello {args[0]}");
+
+            if (Nombre == "Big Yoshi")
+	{
+                Console.WriteLine("Hola Big Yoshi");
+	}
+            else(Nombre != "Big Yoshi");
+	{
+                Console.WriteLine("GTFO");
+	}
             Console.ReadKey();
         }
     }
