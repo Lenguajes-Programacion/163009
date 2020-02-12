@@ -13,52 +13,100 @@ namespace Practica2
         {
             float NumeroUno;
             float NumeroDos;
-            float Res;
+            float Res = 0;
             int Principal;
+            bool op;
+            op = false;
+            float ResDos = 0;
+            //bool aux = Convert.ToBoolean(ResDos);
             do
             {
                 Console.WriteLine("Bienvenido a la calculadora B.I.G  Y.O.S.H.I!");
                 Console.WriteLine("1° Suma" + "\n" + "2° Resta" + "\n" + "3° Multiplicacion" + "\n" + "4° Division" + "\n" + "5° Salir" + "\n");
                 Principal = Int32.Parse(Console.ReadLine());
-                switch (Principal)
-                {
-                    case 1:
-                        Console.WriteLine("¿Que quieres sumar Lmao? \n");
-                        Console.WriteLine("Primer Numero: ");
-                        NumeroUno = Int32.Parse(Console.ReadLine());
-                        Console.WriteLine("Segundo Numero: ");
-                        NumeroDos = Int32.Parse(Console.ReadLine());
-                        Res = NumeroUno + NumeroDos;
+                    switch (Principal)
+                    {
+                        case 1:
+                        if (op == true)
+                        {
+                            Console.WriteLine("Numero a sumar con el resultado anterior: ");
+                            NumeroDos = Int32.Parse(Console.ReadLine());
+                            ResDos = Res + NumeroDos;
+                            Res = ResDos;
+                        }
+                        else
+                        {
+                            Console.WriteLine("¿Que quieres sumar Lmao? \n");
+                            Console.WriteLine("Primer Numero: ");
+                            NumeroUno = Int32.Parse(Console.ReadLine());
+                            Console.WriteLine("Segundo Numero: ");
+                            NumeroDos = Int32.Parse(Console.ReadLine());
+                            Res = NumeroUno + NumeroDos;
+                            op = true;
+                        }
                         Console.WriteLine("Su resultado es: " + Res);
                         Console.WriteLine("\n");
                         break;
                     case 2:
-                        Console.WriteLine("Es una Resta Lmao");
-                        Console.WriteLine("Primer Numero: ");
-                        NumeroUno = Int32.Parse(Console.ReadLine());
-                        Console.WriteLine("Segundo Numero: ");
-                        NumeroDos = Int32.Parse(Console.ReadLine());
-                        Res = NumeroUno - NumeroDos;
+                        if(op == true)
+                        {
+                            Console.WriteLine("Numero a restar con el resultado anterior: ");
+                            NumeroDos = Int32.Parse(Console.ReadLine());
+                            ResDos = Res - NumeroDos;
+                            Res = ResDos;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Es una Resta Lmao");
+                            Console.WriteLine("Primer Numero: ");
+                            NumeroUno = Int32.Parse(Console.ReadLine());
+                            Console.WriteLine("Segundo Numero: ");
+                            NumeroDos = Int32.Parse(Console.ReadLine());
+                            Res = NumeroUno - NumeroDos;
+                            op = true;
+                        }
                         Console.WriteLine("Su resultado es: " + Res);
                         Console.WriteLine("\n");
                         break;
                     case 3:
-                        Console.WriteLine("Es una Multiplicacion Lmao");
-                        Console.WriteLine("Primer Numero: ");
-                        NumeroUno = Int32.Parse(Console.ReadLine());
-                        Console.WriteLine("Segundo Numero: ");
-                        NumeroDos = Int32.Parse(Console.ReadLine());
-                        Res = NumeroUno * NumeroDos;
+                        if(op == true)
+                        {
+                            Console.WriteLine("Numero a multiplicar con el resultado anterior: ");
+                            NumeroDos = Int32.Parse(Console.ReadLine());
+                            ResDos = Res * NumeroDos;
+                            Res = ResDos;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Es una Multiplicacion Lmao");
+                            Console.WriteLine("Primer Numero: ");
+                            NumeroUno = Int32.Parse(Console.ReadLine());
+                            Console.WriteLine("Segundo Numero: ");
+                            NumeroDos = Int32.Parse(Console.ReadLine());
+                            Res = NumeroUno * NumeroDos;
+                            op = true;
+                        }
                         Console.WriteLine("Su resultado es: " + Res);
                         Console.WriteLine("\n");
                         break;
                     case 4:
-                        Console.WriteLine("Es una Division Lmao");
-                        Console.WriteLine("Primer Numero: ");
-                        NumeroUno = Int32.Parse(Console.ReadLine());
-                        Console.WriteLine("Segundo Numero: ");
-                        NumeroDos = Int32.Parse(Console.ReadLine());
-                        Res = NumeroUno / NumeroDos;
+                        if(op == true)
+                        {
+                            Console.WriteLine("Numero a dividir con el resultado anterior: ");
+                            NumeroDos = Int32.Parse(Console.ReadLine());
+                            ResDos = Res / NumeroDos;
+                            Res = ResDos;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Es una Division Lmao");
+                            Console.WriteLine("Primer Numero: ");
+                            NumeroUno = Int32.Parse(Console.ReadLine());
+                            Console.WriteLine("Segundo Numero: ");
+                            NumeroDos = Int32.Parse(Console.ReadLine());
+                            Res = NumeroUno / NumeroDos;
+                            op = true;
+                        }
                         Console.WriteLine("Su resultado es: " + Res);
                         Console.WriteLine("\n");
                         break;
