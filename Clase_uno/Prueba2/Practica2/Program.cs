@@ -18,7 +18,6 @@ namespace Practica2
             bool op;
             op = false;
             float ResDos = 0;
-            //bool aux = Convert.ToBoolean(ResDos);
             do
             {
                 Console.WriteLine("Bienvenido a la calculadora B.I.G  Y.O.S.H.I!");
