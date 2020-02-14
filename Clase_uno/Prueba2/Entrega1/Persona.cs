@@ -1,20 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace PracticaUno
+namespace Entrega1
 {
-    class Program
+    class Persona
     {
-        static void Main(string[] args)
+        public void Personas()
         {
             string Nombre = "Big";
             do
             {
-            Console.WriteLine("Say your name...");
-            Nombre = Console.ReadLine();
+                Console.WriteLine("Say your name...");
+                Nombre = Console.ReadLine();
                 if (Nombre == "Big")
                 {
                     Console.WriteLine($"Hello " + Nombre);
@@ -29,7 +27,4 @@ namespace PracticaUno
             Console.ReadKey();
         }
     }
-    // && = Se cumple todo.
-    // || = Es permisivo.
-    // !false = true
 }
