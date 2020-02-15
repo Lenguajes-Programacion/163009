@@ -7,6 +7,7 @@ namespace Entrega1
         static void Main(string[] args)
         {
             Persona op = new Persona();
+            EpicCalculadora Lmao = new EpicCalculadora();
             int Opcion;
             Console.WriteLine("Bienvenido a las entregas de Big Yoshi... Por favor escoge una entrega \n");
             Console.WriteLine("1° Arreglo con Nombre \n2° Calculadora");
@@ -19,8 +20,10 @@ namespace Entrega1
                         op.Personas();
                         break;
                     case 2:
+                        Lmao.PrincipalCal();
                         break;
                     default:
+                        Console.WriteLine("Non non non non non");
                         break;
                 }
 

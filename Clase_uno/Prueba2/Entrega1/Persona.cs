@@ -24,7 +24,6 @@ namespace Entrega1
                     Console.WriteLine("\n");
                 }
             } while (Nombre != "Big");
-            Console.ReadKey();
         }
     }
 }
