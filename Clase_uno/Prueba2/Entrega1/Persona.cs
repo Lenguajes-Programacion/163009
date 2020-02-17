@@ -6,24 +6,32 @@ namespace Entrega1
 {
     class Persona
     {
+        /*
+        public int opcion
+        {
+            get { return opcion; }
+        }
+        */
         public void Personas()
         {
-            string Nombre = "Big";
-            do
-            {
-                Console.WriteLine("Say your name...");
-                Nombre = Console.ReadLine();
-                if (Nombre == "Big")
+                string Nombre = "Big";
+                do
                 {
-                    Console.WriteLine($"Hello " + Nombre);
-                    Console.WriteLine("\n");
-                }
-                else
-                {
-                    Console.WriteLine($"GTFO " + Nombre);
-                    Console.WriteLine("\n");
-                }
-            } while (Nombre != "Big");
+                    Console.WriteLine("Say your name...");
+                    Nombre = Console.ReadLine();
+                    if (Nombre == "Big")
+                    {
+                        Console.WriteLine($"Hello " + Nombre);
+                        Console.WriteLine("\n");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"GTFO " + Nombre);
+                        Console.WriteLine("\n");
+                    }
+                } while (Nombre != "Big");
+
+                //return opcion;
         }
     }
 }

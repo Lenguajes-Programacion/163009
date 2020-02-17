@@ -2,19 +2,27 @@
 
 namespace Entrega1
 {
-    class Program
+    public class Program
     {
+        /*
+        private int Opcion;
+        public int opcion
+        {
+            get { return Opcion; }
+            set { Opcion = value; }
+        }
+        */
         static void Main(string[] args)
         {
             Persona op = new Persona();
             EpicCalculadora Lmao = new EpicCalculadora();
-            int Opcion;
+            int opcion;
             Console.WriteLine("Bienvenido a las entregas de Big Yoshi... Por favor escoge una entrega \n");
             Console.WriteLine("1° Arreglo con Nombre \n2° Calculadora");
-            Opcion = Int32.Parse(Console.ReadLine());
+            opcion = Int32.Parse(Console.ReadLine());
             do
             {
-                switch (Opcion)
+                switch (opcion)
                 {
                     case 1:
                         op.Personas();
@@ -27,7 +35,7 @@ namespace Entrega1
                         break;
                 }
 
-            } while (Opcion != 3);
+            } while (opcion != 3);
         }
     }
 }
