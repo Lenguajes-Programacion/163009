@@ -121,7 +121,7 @@ namespace Entrega1
             do
             {
                 Console.WriteLine("Bienvenido a la calculadora B.I.G  Y.O.S.H.I!");
-                Console.WriteLine("1° Suma" + "\n" + "2° Resta" + "\n" + "3° Multiplicacion" + "\n" + "4° Division" + "\n" + "5° Salir" + "\n");
+                Console.WriteLine("1° Suma" + "\n" + "2° Resta" + "\n" + "3° Multiplicacion" + "\n" + "4° Division" + "\n" + "5° Mostrar Memoria" + "\n 6° Salir");
                 Principal = Int32.Parse(Console.ReadLine());
                 switch (Principal)
                 {
@@ -138,8 +138,14 @@ namespace Entrega1
                         Chungus.Divison();
                         break;
                     case 5:
+                        Memoria memo = new Memoria();
+                        memo.LeerMemoria();
+                        Console.WriteLine("\n");
+                        break;
+                    case 6:
                         Console.Clear();
                         Console.WriteLine("Hasta la Proxima asdfghjkl!!!");
+                        //EpicCalculadora.ReadToEnd();
                         Console.WriteLine("\n");
                         break;
                     default:
@@ -148,7 +154,7 @@ namespace Entrega1
                         Console.WriteLine("\n");
                         break;
                 }
-            } while (Principal != 5);
+            } while (Principal != 6);
         }
     }
 }

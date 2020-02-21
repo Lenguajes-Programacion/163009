@@ -8,12 +8,23 @@ namespace Entrega1
 {
     class Memoria
     {
-        public void Guardar()
+        public void LeerMemoria()
         {
-            string filepath = "../db.json";
+            string filepath = "../../../db.json";
             StreamReader reader = new StreamReader(filepath);
             var dbJSON = reader.ReadToEnd();
             var dbObject = JObject.Parse(dbJSON);
+            //¨Prueba de Lectura de archivo JSON
+            //var result = dbObject.ToString();
+            //var result = dbObject["arreglo"].ToString();
+            //var result = dbObject["arreglo"][0].ToString();
+            //Lectura de JSON Iterable
+            foreach(var item in dbObject)
+            {
+                Console.WriteLine("Dato de Memoria: ");
+                Console.WriteLine(item.ToString());
+            }
+            //Console.WriteLine(result);
         }
     }
 }
