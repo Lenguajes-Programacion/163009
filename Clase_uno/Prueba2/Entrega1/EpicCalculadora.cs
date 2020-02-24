@@ -145,7 +145,7 @@ namespace Entrega1
                     case 6:
                         Console.Clear();
                         Console.WriteLine("Hasta la Proxima asdfghjkl!!!");
-                        //EpicCalculadora.ReadToEnd();
+                        //Principal = Console.Read();
                         Console.WriteLine("\n");
                         break;
                     default:
