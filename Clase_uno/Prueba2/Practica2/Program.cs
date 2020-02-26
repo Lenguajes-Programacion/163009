@@ -21,7 +21,7 @@ namespace Practica2
             do
             {
                 Console.WriteLine("Bienvenido a la calculadora B.I.G  Y.O.S.H.I!");
-                Console.WriteLine("1° Suma" + "\n" + "2° Resta" + "\n" + "3° Multiplicacion" + "\n" + "4° Division" + "\n" + "5° Salir" + "\n");
+                Console.WriteLine("1° Suma" + "\n" + "2° Resta" + "\n" + "3° Multiplicacion" + "\n" + "4° Division" + "\n" + "5° Memoria" + "\n" + "6° Salir");
                 Principal = Int32.Parse(Console.ReadLine());
                     switch (Principal)
                     {
@@ -110,6 +110,11 @@ namespace Practica2
                         Console.WriteLine("\n");
                         break;
                     case 5:
+                        Memoria memo = new Memoria();
+                        memo.LeerMemoria();
+                        Console.WriteLine("\n");
+                        break;
+                    case 6:
                         Console.WriteLine("Hasta la Proxima asdfghjkl!!!");
                         Console.WriteLine("\n");
                         break;
@@ -118,7 +123,7 @@ namespace Practica2
                         Console.WriteLine("\n");
                         break;
                 }
-            } while (Principal != 5);
+            } while (Principal != 6);
             Console.ReadKey();
         }
     }

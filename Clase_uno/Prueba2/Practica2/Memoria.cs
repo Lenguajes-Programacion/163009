@@ -9,7 +9,7 @@ using Newtonsoft.Json.Linq;
 //2° Utilizar el resultado en una nueva operacion.
 //3° Guardar la nueva operacion en nuestra db.json.
 
-namespace Entrega1
+namespace Practica2
 {
     class Memoria
     {
@@ -27,7 +27,7 @@ namespace Entrega1
             foreach ((var key, var item) in dbObject)
             {
                 Console.WriteLine("Dato de Memoria: ");
-                MemoriaData memoriaData = new MemoriaData(item.key.ToString(), item.Value["operacion"].ToString(),(int) item.Value["resultado"]);
+                MemoriaData memoriaData = new MemoriaData(item.key.ToString(), item.Value["operacion"].ToString(), (int)item.Value["resultado"].ToString());
                 Console.WriteLine("{0 - {1}", memoriaData.Fecha.ToLongDateString());
                 //DateTime OP = Convert.ToDateTime(key);
                 Console.WriteLine(memoriaData.Fecha.ToLongDateString());
@@ -50,6 +50,16 @@ namespace Entrega1
             Fecha = DateTime.Parse(date);
             Operacion = operation;
             Resultado = res;
+        }
+    }
+
+    class LLamado
+    {
+        public float aux;
+
+        public LLamado(float Auxiliar)
+        {
+            aux = Auxiliar;
         }
     }
 
