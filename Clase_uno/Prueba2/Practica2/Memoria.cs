@@ -24,13 +24,13 @@ namespace Practica2
             //var result = dbObject["arreglo"].ToString();
             //var result = dbObject["arreglo"][0].ToString();
             //Lectura de JSON Iterable
-            foreach ((var key, var item) in dbObject)
+            foreach ( var item in dbObject)
             {
                 Console.WriteLine("Dato de Memoria: ");
-                MemoriaData memoriaData = new MemoriaData(item.key.ToString(), item.Value["operacion"].ToString(), (int)item.Value["resultado"].ToString());
-                Console.WriteLine("{0 - {1}", memoriaData.Fecha.ToLongDateString());
-                //DateTime OP = Convert.ToDateTime(key);
+                MemoriaData memoriaData = new MemoriaData(item.Key, item.Value["operacion"].ToString(), (float)item.Value["resultado"]);
                 Console.WriteLine(memoriaData.Fecha.ToLongDateString());
+                //DateTime OP = Convert.ToDateTime(key);
+                //Console.WriteLine(memoriaData.Fecha.ToLongDateString());
                 Console.WriteLine(memoriaData.Resultado.ToString());
                 Console.WriteLine("\n");
                 Console.WriteLine("------------------------------------");
@@ -43,9 +43,9 @@ namespace Practica2
     {
         public DateTime Fecha;
         public string Operacion;
-        public int Resultado;
+        public float Resultado;
 
-        public MemoriaData(DateTime date, string operation, int res)
+        public MemoriaData(string date, string operation, float res)
         {
             Fecha = DateTime.Parse(date);
             Operacion = operation;
@@ -55,11 +55,14 @@ namespace Practica2
 
     class LLamado
     {
-        public float aux;
+        public string aux;
 
-        public LLamado(float Auxiliar)
+        public LLamado(string Auxiliar)
         {
-            aux = Auxiliar;
+            string filepath = "../../../db.json";
+            StreamReader reader = new StreamReader(filepath);
+            var auxJSON = reader.ReadToEnd();
+            var ObjJSON = JObject.Parse(auxJSON);
         }
     }
 
