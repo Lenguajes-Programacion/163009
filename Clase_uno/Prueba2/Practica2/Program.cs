@@ -9,7 +9,7 @@ namespace Practica2
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Calcu()
         {
             float NumeroUno;
             float NumeroDos;
@@ -111,7 +111,7 @@ namespace Practica2
                         break;
                     case 5:
                         Memoria memo = new Memoria();
-                        memo.LeerMemoria();
+                        memo.Bidimencional();
                         Console.WriteLine("\n");
                         break;
                     case 6:
