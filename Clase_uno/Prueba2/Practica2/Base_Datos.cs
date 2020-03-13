@@ -6,7 +6,6 @@ namespace Practica2
 {
     class Base_Datos
     {
-        List<MemoriaData> Almacen = new List<MemoriaData>();
 
     }
 }
