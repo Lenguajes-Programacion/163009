@@ -8,9 +8,9 @@ using Newtonsoft.Json;
 using Formatting = Newtonsoft.Json.Formatting;
 
 
-//1° Crear metodo que nos regrese el resultado seleccionado. ------------------------
-//2° Utilizar el resultado en una nueva operacion. ------------------------
-//3° Guardar la nueva operacion en nuestra db.json.
+// Crear metodo que nos regrese el resultado seleccionado. ------------------------
+// Utilizar el resultado en una nueva operacion. ------------------------
+// Guardar la nueva operacion en nuestra db.json.
 
 namespace Practica2
 {
@@ -19,7 +19,6 @@ namespace Practica2
         public List<MemoriaData> db = new List<MemoriaData>();
         public Memoria()
         {
-            // Constructor de la clase Memoria, para inicializar nuestra lista
             db = new List<MemoriaData>();
         }
         /*
