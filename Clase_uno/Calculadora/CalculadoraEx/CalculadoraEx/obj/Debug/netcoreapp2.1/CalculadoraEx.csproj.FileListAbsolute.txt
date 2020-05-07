@@ -1,0 +1,11 @@
+C:\Users\Usuario-01\Desktop\Calculadora\CalculadoraEx\CalculadoraEx\bin\Debug\netcoreapp2.1\CalculadoraEx.deps.json
+C:\Users\Usuario-01\Desktop\Calculadora\CalculadoraEx\CalculadoraEx\bin\Debug\netcoreapp2.1\CalculadoraEx.runtimeconfig.json
+C:\Users\Usuario-01\Desktop\Calculadora\CalculadoraEx\CalculadoraEx\bin\Debug\netcoreapp2.1\CalculadoraEx.runtimeconfig.dev.json
+C:\Users\Usuario-01\Desktop\Calculadora\CalculadoraEx\CalculadoraEx\bin\Debug\netcoreapp2.1\CalculadoraEx.dll
+C:\Users\Usuario-01\Desktop\Calculadora\CalculadoraEx\CalculadoraEx\obj\Debug\netcoreapp2.1\CalculadoraEx.csprojAssemblyReference.cache
+C:\Users\Usuario-01\Desktop\Calculadora\CalculadoraEx\CalculadoraEx\obj\Debug\netcoreapp2.1\CalculadoraEx.csproj.CoreCompileInputs.cache
+C:\Users\Usuario-01\Desktop\Calculadora\CalculadoraEx\CalculadoraEx\obj\Debug\netcoreapp2.1\CalculadoraEx.AssemblyInfoInputs.cache
+C:\Users\Usuario-01\Desktop\Calculadora\CalculadoraEx\CalculadoraEx\obj\Debug\netcoreapp2.1\CalculadoraEx.AssemblyInfo.cs
+C:\Users\Usuario-01\Desktop\Calculadora\CalculadoraEx\CalculadoraEx\bin\Debug\netcoreapp2.1\CalculadoraEx.pdb
+C:\Users\Usuario-01\Desktop\Calculadora\CalculadoraEx\CalculadoraEx\obj\Debug\netcoreapp2.1\CalculadoraEx.dll
+C:\Users\Usuario-01\Desktop\Calculadora\CalculadoraEx\CalculadoraEx\obj\Debug\netcoreapp2.1\CalculadoraEx.pdb
